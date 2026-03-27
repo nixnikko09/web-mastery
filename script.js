@@ -1,6 +1,18 @@
-const city = "Pasig"
-const course = "IT"
-const year = "3rd year"
-console.log("I live in", city);
-console.log("I study in", course);
-console.log("I am", year);
+const name = "Nikko";
+const age = 24;
+const course = "IT";
+const school = "JRU";
+const dreamJob = "Tech Business Owner";
+console.log(`My name is ${name}`);
+console.log(`I am ${age} years old`);
+console.log(`I study ${course}`);
+console.log(`I study at ${school}`);
+console.log(`I want to become a ${dreamJob}`);
+
+let score = 60;
+if (score >= 75) {
+    console.log("Passed")
+} else {
+    console.log("Failed")
+}
+
