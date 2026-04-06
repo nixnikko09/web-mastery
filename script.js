@@ -29,3 +29,13 @@ const skills = ["HTML", "CSS", "JavaScript", "Git"];
 
 console.log("My first skill is", skills[0]);
 console.log("My second skill is", skills[1]);
+
+const student = {
+    name: "Nikko",
+    age: 24,
+    course: "IT",
+    school: "JRU"
+};
+
+console.log("My name is", student.name);
+console.log("I study IT at", student.school);
