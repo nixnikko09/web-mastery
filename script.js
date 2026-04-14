@@ -11,31 +11,45 @@ console.log(`I study at ${school}`);
 console.log(`I want to become a ${dreamJob}`);
 
 let score = 85;
+
 if (score >= 75) {
-    console.log("Passed")
+  console.log("Passed");
 } else {
-    console.log("Failed")
+  console.log("Failed");
 }
 
 function introduce() {
-    console.log("Hello my name is Nikko");
-    console.log("I study IT");
-    console.log("I want to become a developer");
+  console.log("Hello my name is Nikko");
+  console.log("I study IT");
+  console.log("I want to become a developer");
 }
 
 introduce();
 
 const skills = ["HTML", "CSS", "JavaScript", "Git"];
 
-console.log("My first skill is", skills[0]);
-console.log("My second skill is", skills[1]);
+console.log(`My first skill is ${skills[0]}`);
+console.log(`My second skill is ${skills[1]}`);
 
 const student = {
-    name: "Nikko",
-    age: 24,
-    course: "IT",
-    school: "JRU"
+  name: "Nikko",
+  age: 24,
+  course: "IT",
+  school: "JRU",
 };
 
-console.log("My name is", student.name);
-console.log("I study IT at", student.school);
+console.log(`My name is ${student.name}`);
+console.log(`I study ${student.course} at ${student.school}`);
+
+for (let i = 0; i < skills.length; i++) {
+  console.log(`I know ${skills[i]}`);
+}
+
+const button = document.querySelector("#changeBtn");
+const title = document.querySelector("h1");
+
+button.addEventListener("click", function () {
+    title.textContent = "Welcome Nikko 🔥";
+    title.style.color = "yellow";
+    title.style.fontSize = "40px";
+});
