@@ -53,3 +53,9 @@ button.addEventListener("click", function () {
     title.style.color = "yellow";
     title.style.fontSize = "40px";
 });
+
+const toggleBtn = document.querySelector("#toggleBtn");
+
+toggleBtn.addEventListener("click", function () {
+  document.body.classList.toggle("dark-mode");
+});

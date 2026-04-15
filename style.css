@@ -4,8 +4,8 @@
 
 body {
   font-family: "Courier New", Courier, monospace;
-  background-color: #0f172a;
-  color: #e5e7eb;
+  background-color: #e5e7eb;
+  color: #0f172a;
   margin: 0;
 }
 
@@ -22,7 +22,7 @@ section {
   margin-bottom: 20px;
   background-color: #334155;
   border-radius: 8px;
-  width: 105%;
+  width: 100%;
 }
 
 header {
@@ -87,4 +87,9 @@ footer {
     padding: 5px 10px;
     font-size: 14px;
   }
+}
+
+.dark-mode {
+  background-color: #0f172a;
+  color: #e5e7eb;
 }
