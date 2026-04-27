@@ -59,3 +59,32 @@ const toggleBtn = document.querySelector("#toggleBtn");
 toggleBtn.addEventListener("click", function () {
   document.body.classList.toggle("dark-mode");
 });
+
+const taskInput = document.querySelector("#taskInput");
+const addBtn = document.querySelector("#addBtn");
+const taskList = document.querySelector("#taskList");
+
+addBtn.addEventListener("click", function () {
+  const taskText = taskInput.value;
+
+  if (taskText === "") {
+    alert("Please enter a task!");
+    return;
+  }
+
+  const li = document.createElement("li");
+  li.textContent = taskText;
+
+  const deleteBtn = document.createElement("button");
+  deleteBtn.textContent = "Delete";
+  deleteBtn.classList.add("deleteBtn");
+
+  deleteBtn.addEventListener("click", function () {
+    li.remove();
+  });
+
+  li.appendChild(deleteBtn);
+  taskList.appendChild(li);
+
+  taskInput.value = "";
+});
